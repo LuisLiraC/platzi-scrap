@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer')
+process.setMaxListeners(0)
 
 async function getCoursesData(account) {
   const browser = await puppeteer.launch({
@@ -9,7 +10,7 @@ async function getCoursesData(account) {
   })
   const page = await browser.newPage()
   try {
-    await page.goto(`https://platzi.com/@${account}`)
+    await page.goto(`https://platzi.com/@${account}`, { timeout: 0 })
     const data= await page.evaluate(() => {
       function mapData(data) {
         return data.map(d => {
