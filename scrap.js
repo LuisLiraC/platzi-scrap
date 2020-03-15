@@ -1,7 +1,12 @@
 const puppeteer = require('puppeteer')
 
 async function getCoursesData(account) {
-  const browser = await puppeteer.launch()
+  const browser = await puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+    ],
+  })
   const page = await browser.newPage()
   try {
     await page.goto(`https://platzi.com/@${account}`)
