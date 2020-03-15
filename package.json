@@ -1,14 +1,20 @@
 {
-  "name": "web-scrapper-platzi",
+  "name": "platzi-scrap",
   "version": "1.0.0",
-  "description": "",
+  "description": "Scraper to get your information about the courses you completed in Platzi platform",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "Node",
+    "Express",
+    "Puppeteer",
+    "Platzi"
+  ],
   "author": "LuisLiraC <luisliradev@gmail.com> (https://luislira.xyz/)",
+  "repository": "https://github.com/LuisLiraC/platzi-scrap",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
