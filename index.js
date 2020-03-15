@@ -20,6 +20,6 @@ app.get('/:account', async (req, res) => {
   }
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log(`http://localhost:${PORT}`)
 })
