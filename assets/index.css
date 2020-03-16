@@ -46,6 +46,10 @@ input {
   font-size: 16px;
 }
 
+#help {
+  color: #ff7d7d
+}
+
 button {
   background-color: #98ca3f;
   color: white;
