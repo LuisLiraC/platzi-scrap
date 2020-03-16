@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/static/index.css")
+    title Platzi Scraper
+  body
+    h1 Platzi web scraper 
+    h2 Type your profile name to get your courses
+    input(type="text", name="account", placeholder="Luis_LiraC")
+    button#scrap Scrap
+    small Remember, case sensitive is important
+    div.endpoint
+      p You can use this app on your website or Postman at the following endpoint:
+      input(value="http://platzi-scrap.herokuapp.com/scrap/yourAccount", disabled)#endpoint
+      button#copy Copy to clipboard
+
+    script(src="/static/index.js")
